@@ -18,6 +18,8 @@
         @include('partial.nav')
 
         @yield('content')
+
+        @include('partial.footer')
     </div>
 
     <!-- Scripts -->
