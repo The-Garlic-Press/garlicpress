@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SiteController@home');
 
 
 Route::group(['prefix' => 'admin'], function () {
