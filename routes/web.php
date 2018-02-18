@@ -21,3 +21,8 @@ Route::group(['prefix' => 'admin'], function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('checkpoint', 'StagingController@show');
+Route::post('checkpoint', 'StagingController@check');
+
+Route::get('{year}/{month}/{slug}', 'PostController@show');
