@@ -26,4 +26,10 @@ class User extends \TCG\Voyager\Models\User
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function url()
+    {
+        $name = str_slug($this->name);
+        return url("/user/$name");
+    }
 }
