@@ -16,7 +16,7 @@
           <!-- Blog Post -->
           @foreach($posts as $post)
           <div class="card mb-4">
-            <img class="img-fluid rounded" src="{{$post->image}}" alt="{{$post->title}}">
+            <img class="img-fluid rounded" src="{{Storage::url($post->image)}}" alt="{{$post->title}}">
             <div class="card-body">
               <a class="text-dark" href="{{$post->url()}}">
                 <h2 class="card-title">{{$post->title}}</h2>
