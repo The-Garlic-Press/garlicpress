@@ -108,6 +108,8 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'staging_password' => env('STAGING_PASSWORD'),
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
